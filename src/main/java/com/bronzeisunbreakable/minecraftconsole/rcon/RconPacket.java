@@ -1,6 +1,6 @@
 package com.bronzeisunbreakable.minecraftconsole.rcon;
 
-import com.bronzeisunbreakable.minecraftconsole.Exception.MalformedPacketException;
+import com.bronzeisunbreakable.minecraftconsole.exception.MalformedPacketException;
 import lombok.Getter;
 
 import java.io.*;

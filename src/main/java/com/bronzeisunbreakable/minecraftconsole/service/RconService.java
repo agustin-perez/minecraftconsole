@@ -1,7 +1,7 @@
 package com.bronzeisunbreakable.minecraftconsole.service;
 
-import com.bronzeisunbreakable.minecraftconsole.Exception.AuthenticationException;
 import com.bronzeisunbreakable.minecraftconsole.config.RconConfig;
+import com.bronzeisunbreakable.minecraftconsole.exception.AuthenticationException;
 import com.bronzeisunbreakable.minecraftconsole.rcon.Rcon;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

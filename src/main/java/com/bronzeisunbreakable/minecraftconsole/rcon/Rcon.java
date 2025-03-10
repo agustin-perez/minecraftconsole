@@ -1,6 +1,6 @@
 package com.bronzeisunbreakable.minecraftconsole.rcon;
 
-import com.bronzeisunbreakable.minecraftconsole.Exception.AuthenticationException;
+import com.bronzeisunbreakable.minecraftconsole.exception.AuthenticationException;
 import lombok.Getter;
 import lombok.Setter;
 

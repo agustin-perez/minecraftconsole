@@ -1,6 +1,6 @@
 package com.bronzeisunbreakable.minecraftconsole.service;
 
-import com.bronzeisunbreakable.minecraftconsole.Exception.AuthenticationException;
+import com.bronzeisunbreakable.minecraftconsole.exception.AuthenticationException;
 import com.zgamelogic.annotations.DiscordController;
 import com.zgamelogic.annotations.DiscordMapping;
 import com.zgamelogic.annotations.EventProperty;
