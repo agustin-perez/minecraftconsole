@@ -9,16 +9,14 @@ import java.nio.BufferUnderflowException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
+@Getter
 public class RconPacket {
 
     public static final int SERVERDATA_EXECCOMMAND = 2;
     public static final int SERVERDATA_AUTH = 3;
 
-    @Getter
     private final int requestId;
-    @Getter
     private final int type;
-    @Getter
     private final byte[] payload;
 
     private RconPacket(int requestId, int type, byte[] payload) {

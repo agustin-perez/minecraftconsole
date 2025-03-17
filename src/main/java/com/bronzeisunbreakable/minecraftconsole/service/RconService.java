@@ -46,7 +46,7 @@ public class RconService {
      * @return true si se ejecutó correctamente
      */
     public boolean whitelistAdd(String nickname) throws AuthenticationException, IOException {
-        return !sendCommand("wl add " + nickname).equalsIgnoreCase("Player is already whitelisted\n");
+        return !sendCommand("easywhitelist add " + nickname).equalsIgnoreCase("Player is already whitelisted\n");
     }
 
     /**
@@ -56,7 +56,7 @@ public class RconService {
      * @return true si se ejecutó correctamente
      */
     public boolean whitelistRemove(String nickname) throws AuthenticationException, IOException {
-        return !sendCommand("wl remove " + nickname).equalsIgnoreCase("Player is not whitelisted\n");
+        return !sendCommand("easywhitelist remove " + nickname).equalsIgnoreCase("Player is not whitelisted\n");
     }
 
     /**
