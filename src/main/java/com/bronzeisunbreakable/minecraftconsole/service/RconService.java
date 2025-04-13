@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 
-@Service
 @Slf4j
+@Service
 public class RconService {
     private final RconConfig rconConfig;
 
@@ -46,7 +46,7 @@ public class RconService {
      * @return true si se ejecutó correctamente
      */
     public boolean whitelistAdd(String nickname) throws AuthenticationException, IOException {
-        return !sendCommand("easywhitelist add " + nickname).equalsIgnoreCase("Player is already whitelisted\n");
+        return !sendCommand("wl add " + nickname).equalsIgnoreCase("Player is already whitelisted\n");
     }
 
     /**
@@ -56,7 +56,7 @@ public class RconService {
      * @return true si se ejecutó correctamente
      */
     public boolean whitelistRemove(String nickname) throws AuthenticationException, IOException {
-        return !sendCommand("easywhitelist remove " + nickname).equalsIgnoreCase("Player is not whitelisted\n");
+        return !sendCommand("wl remove " + nickname).equalsIgnoreCase("Player is not whitelisted\n");
     }
 
     /**

@@ -19,8 +19,8 @@ import org.springframework.context.annotation.Bean;
 import java.io.IOException;
 import java.util.List;
 
-@DiscordController
 @Slf4j
+@DiscordController
 public class DiscordMappings {
     private final RconService rconService;
 
